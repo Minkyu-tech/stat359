@@ -1,0 +1,16 @@
+STAT359 Assignment_1
+
+--
+
+The words "health" and "election" are positioned closely. It seems that healthcare policy might be treated in the news during election season. Similarly, "internet" and "technology" are near each other. This suggests that these words show up together frequently in the Sci/Tech category. There is one standout term, "police". This word may be used in various topics and articles so that it is difficult to figure out a specific pattern or cluster.
+
+--
+
+One way the plot is different is the clustering method. For example, compared to the prior one, "team" and "health" are positioned closely, and "war" and "market" are as well. In contrast, there is similarity in standout word, "police", which still remains isolated.
+
+--
+
+The primary reason is likely the difference in data scale. The co-occurrence matrix was trained on a small sample, while the GloVe used much larger corpus. Also, they use different approaches, count-based versus prediction-based. This allows the latter one to capture more robust and meaningful relationship between words.
+
+--
+
