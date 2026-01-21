@@ -14,3 +14,55 @@ The primary reason is likely the difference in data scale. The co-occurrence mat
 
 --
 
+The word "organ" shows two distinct meanings in the top 10 results, related to biological organs and musical instruments. However, the word "apple" seems to be more related to the technology rather than the fruits. This is because "apple" is more frequently used as a company name, "Apple", than as the fruits. For a word to have two meanings in the top 10, the words should be relatively balanced in the training corpus.
+
+--
+
+Three words ("big", "giant", "small") are good examples. First, "giant" is a synonym of "big", while "small" is an antonym. However, the cosine distance between those words shows that "small" is closer to "big" than "giant" is. This is because "big" and "small" are used in similar contexts, meaning they can be interchanged to oppose the meaning of a sentence. In contrast, although "big" and "giant" have a similar meaning, their usage is quite different under conditions, especially considering contextual or grammatical factors. Also, "giant" is less frequent than "big", causing insufficient co-occurrence data and a less stable representation by the model.
+
+--
+
+The target vector is $w+g-m$ and the cosine similarity objective is maximize cos(x, w+g-m). The model above successfully identified "grandmother" as the top result. This shows that the semantic difference between "man" and "grandfather" is encoded in the embedding space. By adding this difference to "woman", the model finds a point nearest to "grandmother".
+
+--
+
+First of all, the word embedding space is a high-dimensional space, not just 1D or 2D. This means that it is unlikely to find a single exact match for the result. Also, for similar reasons, words with similar meanings or contexts tend to cluster densely. For these reasons, it is a common, natural and reliable approach to suggest several mathematically close words based on cosine similarity.
+
+--
+
+I first tried ("use", "use", "report", "report") to find out a word which functions as both a verb and a noun. However, the result showed "reports" as #1, which is close but not the exact form. Next, I tested ("earth", "planet", "sun", "star"), but it suggested "moon" as the top result, which is incorrect with a very low similarity score. Finally, with ("korea", "japan", "seoul", "tokyo"), it figured out "tokyo" exactly. It seems the model successfully matched the relationship between a country and its capital city, as this is consistently encoded.
+
+--
+
+In the result, although its similarity score is low, "foot" is closely associated with the terms in golf. From this, we can assume that "foot" may not strongly encode the "wear/used-with" relation in consistent direction, and instead with golf or some related activity. Additionally, I guess "foot" have multiple meanings in different areas so that it causes some noise while the model is training and searching.
+
+--
+
+While it is a scientific fact that the sun is a star, the model predicted "moon" as the top-1 result. This failure occurs because the model is trained based on contextual co-occurrence, and "moon" appears more frequent with "sun" compared to its scientific meaning, "star".
+
+--
+
+According to the results, "man" is more related to intellectual or authority-related terms such as "knowledge" and "skill", while "woman" is associated with traditional gender or caring roles, such as "nursing" and "childbirth". These strong differences suggest that the model was trained on and encoded societal biases and gender stereotypes from the data. This can be quite plausibly explained because the data has been written and stored for a long period by many people, may having outdated prejudices. Since the model's objective is based on the corpus' contextual co-occurrences, it returns and reflects such biases.
+
+--
+
+For Query A, ```(american + food - foreigner)```, the results are associated with productive and functional terms like "rice" and "supplies". However, those for Query B, ```(foreigner + food - american)```, is closer to less productive words such as "drink" and "booze", and also distinctly negative words, "condom" and "unclean". Since the data has been collected for a long period, having historically biased context, the model objectively encoded these societal stereotypes from the data.
+
+--
+
+The word embedding model is designed based on contextual co-occurrence and its objective is optimized maximizing co-occurrence between words or minimizing thier vector distance. When there exists specific terms with specific relationships and stereotypes, the model recognizes this as a statistical rule, encoding these frequencies as mathematical similarity. In conclusion, since the objective of the model is designed to reproduce its contextual similarity, there may exist biases.
+
+--
+
+There is a data curation / balancing method to adjust the model's bias. This is a highly intuitive method, treating data directly. Since the model trains the frequency in the data, we can control these frequencies ourselves. There is a specific way, counterfactual data augmentation, reducing unbalanced relationships by adding counterfactual sentences. Also, we can use undersampling or oversampling on a strong bias. Despite being a labor-intensive task, it is a strong method addressing the fundamental causes.
+
+--
+
+I used Gemini Thinking Mode for this assignment. After I write the answer myself, I used AI to make my sentences grammatically correct and find better professional expressions for my further study as a data scientist and a ML/AI expert. I also used AI to make better sense of concepts because it was quite difficult to understand on my own. I first tried to understand what it means and asked Gemini when I cannot fully get it. For some questions, I cross-checked to understand the results.
+
+
+
+
+
+
+
