@@ -1,0 +1,45 @@
+Assignment 2 Update & Clarification
+I want to clarify an issue in Assignment 2 and share an update.
+
+In the original data.py, the code was using only the top 5 sentences to generate skip-gram pairs. This was my oversight — I temporarily modified the code to test skip-gram without negative sampling and forgot to switch it back.
+
+I’m really glad that some of you caught this and brought it to my attention.
+
+What’s changed?
+You now have two valid options for Assignment 2:
+
+Use data_5sents.py (old data.py behavior)
+
+This version works correctly, but it only generates skip-gram pairs from the top 5 sentences, so you’re effectively training the embeddings on a tiny subset of the corpus.
+
+This is fine for a quick run or comparison baseline, but you should expect weaker or less stable embeddings compared to training on the full dataset.
+
+Use data_full.py
+
+Train embeddings on the full dataset
+
+To control vocabulary size and training time:
+
+Words occurring fewer than 50 times are filtered out (same strategy as gensim)
+
+Frequent stop words are downsampled to accelerate training
+
+I tested both approaches and also tuned several hyperparameters. In particular:
+
+Early stopping shows that ~5 epochs are sufficient (no need for 25)
+
+Larger batch sizes (increase it from 128 to 512) improve GPU parallelism and gradient stability
+
+I used Adam, while Jack used SGD
+
+Training completes in about 20 minutes on a T4 GPU in Google Colab
+
+All updates have been pushed to the course repo, please sync your fork with the course repo to get the latest changes.
+
+If you’ve already submitted, you are completely fine.
+No resubmission or changes are required.
+
+As always, feel free to reach out if you run into issues or have concerns. We’ll talk about different optimizers in next lecture so you can better understand the trade-offs between them.
+
+🙌 Shout-out
+A big thank you to Jack Yu for spotting the issue, modifying the data.py file, and sharing his solution — much appreciated!

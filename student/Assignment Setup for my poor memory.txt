@@ -1,0 +1,13 @@
+과제 진행 환경 세팅
+
+1. 내 깃허브 레포 들어가서 교수님 레포 Sync
+
+2. VS Code 들어가서 Fetch From All Remotes - Sync Changes
+
+3. 새로운 Assignment 폴더 student 폴더 하위로 복붙
+
+4. VS Code 내 터미널 열고 (ctrl + ~) power shell 확인 -> poetry install
+
+5. cuda 쓸 수 있게 pip로 업데이트 -> poetry run pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+6. 설치 확인 -> poetry run python test_torch_env.py
