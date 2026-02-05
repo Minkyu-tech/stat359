@@ -53,7 +53,7 @@ class Word2Vec(nn.Module):
         return self.input_embed.weight.data.cpu().numpy()
 
 # Load processed data
-with open('processed_data.pkl', 'rb') as f:
+with open('data\processed_data.pkl', 'rb') as f:
     data = pickle.load(f)
 
 # dict_keys(['sent_list', 'counter', 'word2idx', 'idx2word', 'skipgram_df'])
@@ -138,7 +138,7 @@ print("Training Compeleted.")
 
 # Save embeddings and mappings
 embeddings = model.get_embeddings()
-with open('word2vec_embeddings.pkl', 'wb') as f:
+with open('models\word2vec_embeddings.pkl', 'wb') as f:
     pickle.dump({
         'embeddings': embeddings,
         'word2idx': data['word2idx'],

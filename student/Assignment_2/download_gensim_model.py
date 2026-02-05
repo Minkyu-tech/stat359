@@ -18,7 +18,7 @@ def load_local_gensim_model(model_name):
     import os
     from gensim.models import KeyedVectors
     import gensim.downloader as api
-    path = f"{model_name}.model"
+    path = f"models\{model_name}.model"
     if not os.path.exists(path):
         print(f"Model file {path} not found. Downloading '{model_name}'...")
         model = api.load(model_name)
@@ -29,10 +29,10 @@ def load_local_gensim_model(model_name):
  
 if __name__ == "__main__":
     for model_name in models:
-        if not os.path.exists(f"{model_name}.model"):
+        if not os.path.exists(f"models\{model_name}.model"):
             print(f"Model {model_name} not found locally. Downloading...")
             model = api.load(model_name)
-            model.save(f"{model_name}.model")
+            model.save(f"models\{model_name}.model")
             print(f"Model {model_name} downloaded and saved.")
         else:
             print(f"Model {model_name} already exists locally. skipping download.")

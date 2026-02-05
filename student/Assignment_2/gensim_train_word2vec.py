@@ -16,14 +16,14 @@ model = Word2Vec(
 )
 
 # Save the trained model in gensim's native format
-model.save("word2vec_text8_gensim.model")
+model.save("models\word2vec_text8_gensim.model")
 
 # Optionally, save the word vectors as a numpy array and word2idx mapping
 word_vectors = model.wv.vectors
 vocab = model.wv.index_to_key
 word2idx = {word: idx for idx, word in enumerate(vocab)}
 
-with open("word2vec_gensim_embeddings.pkl", "wb") as f:
+with open("models\word2vec_gensim_embeddings.pkl", "wb") as f:
     pickle.dump({
         'embeddings': word_vectors,
         'word2idx': word2idx,
