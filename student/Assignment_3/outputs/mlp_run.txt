@@ -1,0 +1,173 @@
+mlp_run
+
+========== Splitting Data ==========
+Train: 3501, Val: 618, Test: 727
+DataLoaders created.
+
+========== Defining MLP Classifier ==========
+
+========== Setting Up Training ==========
+Using device: cuda
+Training setup complete.
+
+========== Starting Training Loop ==========
+
+--- Epoch 1/30 ---
+Train Loss: 1.0736, Train F1: 0.3588, Train Acc: 0.4324                                                                                                                     
+Val Loss: 1.0399, Val F1: 0.4494, Val Acc: 0.5761                                                                                                                           
+>>> Saved new best model (Val F1: 0.4494)
+
+--- Epoch 2/30 ---
+Train Loss: 1.0089, Train F1: 0.4415, Train Acc: 0.5473                                                                                                                     
+Val Loss: 0.9841, Val F1: 0.4445, Val Acc: 0.6084
+
+--- Epoch 3/30 ---
+Train Loss: 0.9620, Train F1: 0.4648, Train Acc: 0.5613                                                                                                                     
+Val Loss: 0.9253, Val F1: 0.4897, Val Acc: 0.5939                                                                                                                           
+>>> Saved new best model (Val F1: 0.4897)
+
+--- Epoch 4/30 ---
+Train Loss: 0.9166, Train F1: 0.5063, Train Acc: 0.5967                                                                                                                     
+Val Loss: 0.8876, Val F1: 0.5353, Val Acc: 0.6634
+>>> Saved new best model (Val F1: 0.5353)
+
+--- Epoch 5/30 ---
+Train Loss: 0.8967, Train F1: 0.5200, Train Acc: 0.6041                                                                                                                     
+Val Loss: 0.8537, Val F1: 0.5568, Val Acc: 0.6375
+>>> Saved new best model (Val F1: 0.5568)
+
+--- Epoch 6/30 ---
+Train Loss: 0.8656, Train F1: 0.5593, Train Acc: 0.6255                                                                                                                     
+Val Loss: 0.8372, Val F1: 0.5535, Val Acc: 0.6440
+
+--- Epoch 7/30 ---
+Train Loss: 0.8407, Train F1: 0.5632, Train Acc: 0.6307                                                                                                                     
+Val Loss: 0.8036, Val F1: 0.5984, Val Acc: 0.6667
+>>> Saved new best model (Val F1: 0.5984)
+
+--- Epoch 8/30 ---
+Train Loss: 0.8201, Train F1: 0.5782, Train Acc: 0.6381                                                                                                                     
+Val Loss: 0.7944, Val F1: 0.6264, Val Acc: 0.6845                                                                                                                           
+>>> Saved new best model (Val F1: 0.6264)
+
+--- Epoch 9/30 ---
+Train Loss: 0.8108, Train F1: 0.5945, Train Acc: 0.6538                                                                                                                     
+Val Loss: 0.7808, Val F1: 0.5966, Val Acc: 0.6278
+
+--- Epoch 10/30 ---
+Train Loss: 0.7934, Train F1: 0.6008, Train Acc: 0.6530                                                                                                                     
+Val Loss: 0.7727, Val F1: 0.5826, Val Acc: 0.5987                                                                                                                           
+
+--- Epoch 11/30 ---
+Train Loss: 0.7841, Train F1: 0.6171, Train Acc: 0.6707                                                                                                                     
+Val Loss: 0.7521, Val F1: 0.5842, Val Acc: 0.6505
+
+--- Epoch 12/30 ---
+Train Loss: 0.7502, Train F1: 0.6305, Train Acc: 0.6844                                                                                                                     
+Val Loss: 0.7165, Val F1: 0.6366, Val Acc: 0.6893                                                                                                                           
+>>> Saved new best model (Val F1: 0.6366)
+
+--- Epoch 13/30 ---
+Train Loss: 0.7255, Train F1: 0.6418, Train Acc: 0.6892                                                                                                                     
+Val Loss: 0.7086, Val F1: 0.6924, Val Acc: 0.7395                                                                                                                           
+>>> Saved new best model (Val F1: 0.6924)
+
+--- Epoch 14/30 ---
+Train Loss: 0.7114, Train F1: 0.6452, Train Acc: 0.6889                                                                                                                     
+Val Loss: 0.7059, Val F1: 0.6425, Val Acc: 0.6990
+
+--- Epoch 15/30 ---
+Train Loss: 0.7051, Train F1: 0.6504, Train Acc: 0.6967                                                                                                                     
+Val Loss: 0.6750, Val F1: 0.6686, Val Acc: 0.6990                                                                                                                           
+
+--- Epoch 16/30 ---
+Train Loss: 0.6884, Train F1: 0.6637, Train Acc: 0.7058                                                                                                                     
+Val Loss: 0.6699, Val F1: 0.6864, Val Acc: 0.7168                                                                                                                           
+
+--- Epoch 17/30 ---
+Train Loss: 0.6914, Train F1: 0.6603, Train Acc: 0.6995                                                                                                                     
+Val Loss: 0.6677, Val F1: 0.6787, Val Acc: 0.7314                                                                                                                           
+
+--- Epoch 18/30 ---
+Train Loss: 0.6646, Train F1: 0.6777, Train Acc: 0.7169                                                                                                                     
+Val Loss: 0.6538, Val F1: 0.6849, Val Acc: 0.7184
+
+--- Epoch 19/30 ---
+Train Loss: 0.6415, Train F1: 0.6864, Train Acc: 0.7235                                                                                                                     
+Val Loss: 0.6545, Val F1: 0.6824, Val Acc: 0.7087                                                                                                                           
+
+--- Epoch 20/30 ---
+Train Loss: 0.6394, Train F1: 0.6931, Train Acc: 0.7281                                                                                                                     
+Val Loss: 0.6489, Val F1: 0.6781, Val Acc: 0.7087                                                                                                                           
+
+--- Epoch 21/30 ---
+Train Loss: 0.6453, Train F1: 0.6907, Train Acc: 0.7275                                                                                                                     
+Val Loss: 0.6507, Val F1: 0.6988, Val Acc: 0.7346                                                                                                                           
+>>> Saved new best model (Val F1: 0.6988)
+
+--- Epoch 22/30 ---
+Train Loss: 0.6329, Train F1: 0.6977, Train Acc: 0.7341                                                                                                                     
+Val Loss: 0.6599, Val F1: 0.7007, Val Acc: 0.7427                                                                                                                           
+>>> Saved new best model (Val F1: 0.7007)
+
+--- Epoch 23/30 ---
+Train Loss: 0.6185, Train F1: 0.7060, Train Acc: 0.7378                                                                                                                     
+Val Loss: 0.6461, Val F1: 0.6767, Val Acc: 0.7006                                                                                                                           
+
+--- Epoch 24/30 ---
+Train Loss: 0.6321, Train F1: 0.6912, Train Acc: 0.7278                                                                                                                     
+Val Loss: 0.6618, Val F1: 0.6508, Val Acc: 0.6893
+
+--- Epoch 25/30 ---
+Train Loss: 0.6204, Train F1: 0.6946, Train Acc: 0.7292                                                                                                                     
+Val Loss: 0.6433, Val F1: 0.6707, Val Acc: 0.7039                                                                                                                           
+
+--- Epoch 26/30 ---
+Train Loss: 0.6148, Train F1: 0.6988, Train Acc: 0.7315                                                                                                                     
+Val Loss: 0.6353, Val F1: 0.6767, Val Acc: 0.7087                                                                                                                           
+
+--- Epoch 27/30 ---
+Train Loss: 0.6032, Train F1: 0.7075, Train Acc: 0.7441                                                                                                                     
+Val Loss: 0.6373, Val F1: 0.6959, Val Acc: 0.7330
+
+--- Epoch 28/30 ---
+Train Loss: 0.6046, Train F1: 0.7096, Train Acc: 0.7449                                                                                                                     
+Val Loss: 0.6345, Val F1: 0.6908, Val Acc: 0.7330                                                                                                                           
+
+--- Epoch 29/30 ---
+Train Loss: 0.5938, Train F1: 0.7178, Train Acc: 0.7512                                                                                                                     
+Val Loss: 0.6375, Val F1: 0.6726, Val Acc: 0.7055
+
+--- Epoch 30/30 ---
+Train Loss: 0.5911, Train F1: 0.7104, Train Acc: 0.7426                                                                                                                     
+Val Loss: 0.6388, Val F1: 0.6808, Val Acc: 0.7104
+
+========== Plotting Learning Curves ==========
+Learning curves saved as 'outputs/mlp_f1_learning_curves.png'.
+Accuracy curve saved as 'outputs/mlp_accuracy_learning_curve.png'.
+
+==================================================
+Final Test Accuracy: 0.7483
+Test F1 Macro: 0.7087
+Test F1 Weighted: 0.7497
+==================================================
+
+Classification Report:
+              precision    recall  f1-score   support
+
+Negative (0)     0.6017    0.7802    0.6794        91
+ Neutral (1)     0.8430    0.8079    0.8251       432
+Positive (2)     0.6359    0.6078    0.6216       204
+
+    accuracy                         0.7483       727
+   macro avg     0.6935    0.7320    0.7087       727
+weighted avg     0.7547    0.7483    0.7497       727
+
+Confusion matrix saved as 'outputs/mlp_confusion_matrix.png'.
+
+Per-class F1 Scores:
+Negative (0): 0.6794
+Neutral (1): 0.8251
+Positive (2): 0.6216
+
+========== Script Complete ==========

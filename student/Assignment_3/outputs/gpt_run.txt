@@ -1,0 +1,66 @@
+gpt_run
+
+========== Splitting Data ==========
+Train: 3501, Val: 618, Test: 727
+DataLoaders created.
+
+========== Setting Up Training ==========
+Using device: cuda
+Training setup complete.
+
+========== Starting Training Loop ==========
+
+--- Epoch 1/5 ---
+Train Loss: 0.9647, Train F1: 0.4009, Train Acc: 0.6095                                                                                                                     
+Val Loss: 0.7411, Val F1: 0.4837, Val Acc: 0.6828                                                                                                                           
+>>> Saved new best model (Val F1: 0.4837)
+
+--- Epoch 2/5 ---
+Train Loss: 0.5962, Train F1: 0.6694, Train Acc: 0.7535                                                                                                                     
+Val Loss: 0.4451, Val F1: 0.7645, Val Acc: 0.8107                                                                                                                           
+>>> Saved new best model (Val F1: 0.7645)
+
+--- Epoch 3/5 ---
+Train Loss: 0.4233, Train F1: 0.7973, Train Acc: 0.8303                                                                                                                     
+Val Loss: 0.4183, Val F1: 0.8003, Val Acc: 0.8220                                                                                                                           
+>>> Saved new best model (Val F1: 0.8003)
+
+--- Epoch 4/5 ---
+Train Loss: 0.3395, Train F1: 0.8392, Train Acc: 0.8646                                                                                                                     
+Val Loss: 0.3899, Val F1: 0.8077, Val Acc: 0.8317                                                                                                                           
+>>> Saved new best model (Val F1: 0.8077)
+
+--- Epoch 5/5 ---
+Train Loss: 0.2797, Train F1: 0.8697, Train Acc: 0.8906                                                                                                                     
+Val Loss: 0.3810, Val F1: 0.8128, Val Acc: 0.8333                                                                                                                           
+>>> Saved new best model (Val F1: 0.8128)
+
+========== Plotting Learning Curves ==========
+Learning curves saved as 'outputs/gpt_f1_learning_curves.png'.
+Accuracy curve saved as 'outputs/gpt_accuracy_learning_curve.png'.
+
+==================================================
+Final Test Accuracy: 0.8129
+Test F1 Macro: 0.7872
+Test F1 Weighted: 0.8144
+==================================================
+
+Classification Report:
+              precision    recall  f1-score   support
+
+Negative (0)     0.7048    0.8132    0.7551        91
+ Neutral (1)     0.8786    0.8380    0.8578       432
+Positive (2)     0.7381    0.7598    0.7488       204
+
+    accuracy                         0.8129       727
+   macro avg     0.7738    0.8037    0.7872       727
+weighted avg     0.8174    0.8129    0.8144       727
+
+Confusion matrix saved as 'outputs/gpt_confusion_matrix.png'.
+
+Per-class F1 Scores:
+Negative (0): 0.7551
+Neutral (1): 0.8578
+Positive (2): 0.7488
+
+========== Script Complete ==========

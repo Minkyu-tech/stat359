@@ -1,0 +1,66 @@
+bert_run
+
+========== Splitting Data ==========
+Train: 3501, Val: 618, Test: 727
+DataLoaders created.
+
+========== Defining BERT Classifier ==========
+
+========== Setting Up Training ==========
+Using device: cuda
+Training setup complete.
+
+========== Starting Training Loop ==========
+
+--- Epoch 1/5 ---
+Train Loss: 0.7904, Train F1: 0.6132, Train Acc: 0.6518                                                                                                                     
+Val Loss: 0.4820, Val F1: 0.7410, Val Acc: 0.7573                                                                                                                           
+>>> Saved new best model (Val F1: 0.7410)
+
+--- Epoch 2/5 ---
+Train Loss: 0.3961, Train F1: 0.8144, Train Acc: 0.8292                                                                                                                     
+Val Loss: 0.4521, Val F1: 0.7781, Val Acc: 0.7880                                                                                                                           
+>>> Saved new best model (Val F1: 0.7781)
+
+--- Epoch 3/5 ---
+Train Loss: 0.2614, Train F1: 0.8845, Train Acc: 0.8935                                                                                                                     
+Val Loss: 0.4258, Val F1: 0.8340, Val Acc: 0.8463                                                                                                                           
+>>> Saved new best model (Val F1: 0.8340)
+
+--- Epoch 4/5 ---
+Train Loss: 0.1614, Train F1: 0.9265, Train Acc: 0.9352                                                                                                                     
+Val Loss: 0.5268, Val F1: 0.8018, Val Acc: 0.8026                                                                                                                           
+
+--- Epoch 5/5 ---
+Train Loss: 0.1053, Train F1: 0.9529, Train Acc: 0.9594                                                                                                                     
+Val Loss: 0.5371, Val F1: 0.8234, Val Acc: 0.8382
+
+========== Plotting Learning Curves ==========
+Learning curves saved as 'outputs/bert_f1_learning_curves.png'.
+Accuracy curve saved as 'outputs/bert_accuracy_learning_curve.png'.
+
+==================================================
+Final Test Accuracy: 0.8129
+Test F1 Macro: 0.8055
+Test F1 Weighted: 0.8161
+==================================================
+
+Classification Report:
+              precision    recall  f1-score   support
+
+Negative (0)     0.7500    0.8901    0.8141        91
+ Neutral (1)     0.9183    0.7801    0.8436       432
+Positive (2)     0.6865    0.8480    0.7588       204
+
+    accuracy                         0.8129       727
+   macro avg     0.7849    0.8394    0.8055       727
+weighted avg     0.8322    0.8129    0.8161       727
+
+Confusion matrix saved as 'outputs/bert_confusion_matrix.png'.
+
+Per-class F1 Scores:
+Negative (0): 0.8141
+Neutral (1): 0.8436
+Positive (2): 0.7588
+
+========== Script Complete ==========
