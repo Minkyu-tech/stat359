@@ -27,6 +27,8 @@ langchain = "^0.3.26"
 langchain-ollama = "^0.3.3"
 umap-learn = "^0.5.7"
 plotly = "^6.2.0"
+evaluate = "^0.4.6"
+peft = "^0.18.1"
 
 
 [build-system]

@@ -57,3 +57,8 @@ cdk.out/
 *.pth
 *.onnx
 *.npy
+
+# hf_tutorial heavy model files
+student/hf_tutorial/distilbert-rotten-tomatoes/checkpoint-*/
+student/hf_tutorial/my_fine_tuned_model/*
+!student/hf_tutorial/my_fine_tuned_model/README.md
