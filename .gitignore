@@ -62,3 +62,25 @@ cdk.out/
 student/hf_tutorial/distilbert-rotten-tomatoes/checkpoint-*/
 student/hf_tutorial/my_fine_tuned_model/*
 !student/hf_tutorial/my_fine_tuned_model/README.md
+
+# final project unnecessary files
+student/final_project/clinical_note_icd_llm/outdated/
+student/final_project/clinical_note_icd_llm/playground/
+student/final_project/clinical_note_icd_llm/Project_details.ipynb
+student/final_project/clinical_note_icd_llm/Project_proposal_final.ipynb
+
+student/final_project/clinical_note_icd_llm/models/base_bert_ce/*
+student/final_project/clinical_note_icd_llm/models/biomed_bert_ce/*
+student/final_project/clinical_note_icd_llm/models/biomed_bert_weighted_ce/*
+
+student/final_project/clinical_note_icd_llm/outputs/base_bert_ce/checkpoint*/
+student/final_project/clinical_note_icd_llm/outputs/biomed_bert_ce/checkpoint*/
+student/final_project/clinical_note_icd_llm/outputs/biomed_bert_weighted_ce/checkpoint*/
+
+student/final_project/clinical_note_icd_llm/sub_experiment/models/base_bert_ce/*
+student/final_project/clinical_note_icd_llm/sub_experiment/models/biomed_bert_ce/*
+student/final_project/clinical_note_icd_llm/sub_experiment/models/biomed_bert_weighted_ce/*
+
+student/final_project/clinical_note_icd_llm/sub_experiment/outputs/base_bert_ce/checkpoint*/
+student/final_project/clinical_note_icd_llm/sub_experiment/outputs/biomed_bert_ce/checkpoint*/
+student/final_project/clinical_note_icd_llm/sub_experiment/outputs/biomed_bert_weighted_ce/checkpoint*/
